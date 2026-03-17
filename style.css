@@ -4,93 +4,343 @@
 }
 
 body {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    font-family: Arial, sans-serif;
 }
 
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:white;
-}
-
-.logo {
-    /* width: 20%;
-    height: 100px; */
+    background: white;
+    padding: 10px;
 }
 
 .logo img {
-    height: 200px;
-    align-items: center;
-    padding: 0 px;
-    width: 568px;
+    height: 120px;
+    width: auto;
 }
 
 .advertise {
     padding: 0 10px;
 }
 
-.logo .date{
+.logo .date {
     padding: 2px 10px;
-    font-size: 30px;
-}
-
-.bar_table{
-    border:2px solid rgb(49, 49, 49);
-}
-
-
-table tr th{
-    padding: 15px 30px;
-    font-size: larger;
-}
-
-.parties img{
-    width:80px;
-    height:auto;
-    border-radius:40px;
-
-}
-
-.parties{
-    /* border:2px solid black; */
-    width:300px;
-    text-align: center;
-    padding: 15px 20px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.parties{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-table tbody tr>td {
-    text-align: center;
-    align-items: center;
-    font-size: 30px;
+.bar_table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.blue>div{
+tr td,
+table tr th {
+    border: 1px solid black;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 18px;
+
+
+
+
+}
+
+.parties {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.parties img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.parties p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+table tbody tr td {
+    font-size: 18px;
+}
+
+.blue>div {
     background-color: blue;
-    height:20px;
+    border-radius: 7px;
+    height: 30px;
+    width: 47.80%;
+}
+
+.green>div {
+    background-color: green;
+    border-radius: 7px;
+    height: 30px;
+    width: 16.27%;
+}
+
+.yellow>div {
+    background-color: yellow;
+    border-radius: 7px;
+    height: 30px;
+    width: 13.46%;
+}
+
+.red>div {
+    background-color: red;
+    border-radius: 7px;
+    height: 30px;
+    width: 7.50%;
+}
+
+.brown>div {
+    background-color: brown;
+    border-radius: 7px;
+    height: 30px;
+    width: 3.57%;
+}
+
+.gray>div {
+    background-color: gray;
+    border-radius: 7px;
+    height: 30px;
+    width: 3.06%;
+}
+
+.light-green>div {
+    background-color: lightgreen;
+    border-radius: 7px;
+    height: 30px;
+    width: 1.65%;
+}
+
+.sky-blue>div {
+    background-color: skyblue;
+    border-radius: 7px;
+    height: 30px;
+    width: 1.59%;
+}
+
+.black>div {
+    background-color: black;
+    border-radius: 7px;
+    height: 30px;
+    width: 0.73%;
+}
+
+.pink>div {
+    background-color: pink;
+    border-radius: 7px;
+    height: 30px;
+    width: 0.50%;
+}
+
+.more-news{
+    align-items: center;
+    display:grid;
+}
+
+
+
+.marquee .btn{
+    padding: 15px 20px;
+    border:blue;
+    color:white;
+    font-size: 40px;
+    text-decoration: none;
+    
+}
+
+.marquee{
+    overflow:hidden;
+    white-space: nowrap;
+    background-color: rgb(47, 47, 220);
+}
+
+.marquee a{
+    display:inline-block;
+    animation:move 15s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translatex(100vw);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+
+.footer {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 200px;
+    align-items: center;
+}
+
+.footer-logo img {
+    padding: 40px 50px;
+    grid-column: 1/2;
+}
+
+.dharmaraj {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.basanta {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.suchana {
+    grid-column: 4/5;
+    text-align: center;
+}
+
+.khabar {
+    grid-column: 5/6;
+    text-align: center;
+}
+
+.social {
+    grid-column: 6/7;
+    text-align: center;
+    padding: auto 50px;
+}
+
+
+.head-image img{
     width:100%;
 }
-.green>div{
-    background-color: green;
-    height:20px;
-    width:70%;
-}
-.yellow>div{
-    background-color: yellow;
-    height:20px;
-    width:50%;
-}
-.red>div{
-    background-color: red;
-    height:20px;
-    width:30%;
+
+.head-image h1{
+    text-align: center;
+    padding:20px 0;
 }
 
+.head-image p{
+    padding:5px 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Now making responsive*/
+
+/*for mobile max-width is 768px*/
+
+@media (max-width:768px){
+    .top-header{
+        flex-direction: column;
+        text-align: center;
+        gap:10px
+    }
+
+    .logo img{
+        height:80px;
+    }
+
+    .logo .date{
+        font-size:18px;
+    }
+
+    .advertise img{
+        width:100%;
+        height:auto;
+    }
+
+    /*there is also important of table scroll so*/
+    .election{
+        overflow-x:auto;
+    }
+
+    .bar_table{
+        min-width:700px;
+    }
+
+
+    /*now news section*/
+    .head-image img{
+        width:100%;
+        height:auto;
+    }
+
+    .head-image h1{
+        font-size:20px;
+        padding:10px;
+    }
+
+    .head-image p{
+        font-size: 16px;
+        padding:10px;
+    }
+
+
+    /*now for marquee button*/
+    .marquee .btn{
+        font-size: 20px;
+        padding:10px;
+    }
+
+    /*footer section*/
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        text-align: center;
+        gap:15px;
+        padding:20px 0;
+    }
+
+    .footer-logo img{
+        padding: 10px;
+    }
+}
+
+
+/*now for tablet section ( max width is between 768px to 1024px*/
+
+@media (max-width: 1024px){
+    .logo img{
+        height:100px
+    }
+
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:auto;
+        gap:20px;
+        padding:20px;
+    }
+
+    .footer>div{
+        grid-column: auto !important;
+    }
+
+    .bar_table{
+        font-size: 14px;
+    }
+
+    .parties img{
+        width:40px;
+        height:40px;
+    }
+
+    .parties p{
+        font-size:16px;
+    }
+}
